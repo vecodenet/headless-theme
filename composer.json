@@ -1,0 +1,21 @@
+{
+  "name": "vecode/headless-theme",
+  "description": "Headless theme, for headless WordPress instances.",
+  "version": "1.0",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "biohzrdmx",
+      "email": "hi@biohzrdmx.me",
+      "homepage": "https://biohzrdmx.me"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-mbstring": "*",
+    "composer/installers": "~1.0",
+    "oscarotero/env": "^2.1"
+  },
+  "minimum-stability": "stable"
+}
