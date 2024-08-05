@@ -39,4 +39,14 @@ add_action( 'customize_register', function($wp_customize) {
       false => __('Enabled'),
     ],
   ]);
+  $wp_customize->add_setting( 'headless_redirect_url' , [
+    'default'    => null,
+    'transport'  => 'refresh',
+  ]);
+  $wp_customize->add_control('headless_redirect_url', [
+    'label'      => __('Redirect URL'),
+    'section'    => 'headless_options',
+    'settings'   => 'headless_redirect_url',
+    'type'       => 'url'
+  ]);
 });
